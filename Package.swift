@@ -5,10 +5,10 @@ import PackageDescription
 let package = Package(
   name: "ErrorClient",
   platforms: [
-    .macOS(.v12),
-    .iOS(.v16),
-    .watchOS(.v8),
-    .tvOS(.v16),
+    .macOS(.v13),
+    .iOS(.v17),
+    .watchOS(.v9),
+    .tvOS(.v17),
   ],
   products: [
     // Products define the executables and libraries a package produces, making them visible to other packages.
@@ -18,7 +18,7 @@ let package = Package(
     )
   ],
   dependencies: [
-    .package(url: "https://github.com/pointfreeco/swift-dependencies", from: "1.3.9"),
+    .package(url: "https://github.com/pointfreeco/swift-dependencies", from: "1.9.2"),
     .package(url: "https://github.com/sideeffect-io/AsyncExtensions", from: "0.5.2"),
   ],
   targets: [
